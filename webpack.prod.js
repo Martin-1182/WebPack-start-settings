@@ -26,7 +26,7 @@ module.exports = merge(common, {
         }
       }),
       new HtmlWebpackPlugin({
-        filename: "test.html",
+        filename: "test/index.html",
         template: "./src/template2.html",
         minify: {
           removeAttributeQuotes: true,
