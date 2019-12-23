@@ -30,7 +30,9 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "clean-webpack-plugin": "^2.0.2",
-    "gsap": "^3.0.4"
+    "gsap": "^3.0.4",
+    "scrollmagic": "^2.0.7"
   }
 }

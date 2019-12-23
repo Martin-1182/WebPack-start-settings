@@ -3,16 +3,85 @@ $primary: black;
 $danger: purple;
 @import "~bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css?family=Shojumaru&display=swap");
+@import "~aos/src/sass/aos";
 
 html {
-  height: 100%;
-  color: $primary;
   border: 25px solid $primary;
+
   body {
     font-family: "Shojumaru", cursive;
-    color: black;
+    color: $primary;
     padding: 0;
     margin: 0 auto;
     background-color: $bg-color;
+    background-image: url(./assets/images/backg.svg);
+	background-repeat: no-repeat;
+	background-size: 10em;
+	background-position: 10px 10px;
+  }
+  .img-anime {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  section {
+    text-align: center;
+    vertical-align: middle;
+  }
+  .midle {
+	background-color: $primary;
+	background-image: url(./assets/images/backg.svg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	background-size: 4em;
+	padding-bottom: 3em;
+  }
+  .bottom {
+	background-color: $bg-color;
+  }
+  .col-sm,
+  .col-md-auto,
+  .col {
+    height: 15em;
+    background-color: yellow;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 5px;
+  }
+  .long {
+    border-radius: 0;
+    h2 {
+      padding-top: 3em;
+    }
+  }
+  .logo {
+    position: relative;
+    .navbar-brand {
+      position: absolute;
+      top: -65px;
+      left: -25px;
+    }
+  }
+  .cover {
+    height: 350px;
+    margin-bottom: -4px;
+    background-image: url(./assets/images/pizza.png);
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .b1 {
+    background-color: $primary;
+    color: white;
+  }
+  @media screen and (max-width: 600px) {
+    .cover {
+      height: 210px;
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .cover {
+      height: 120px;
+    }
   }
 }
