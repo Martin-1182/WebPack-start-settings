@@ -7,6 +7,24 @@ $danger: purple;
 
 html {
   border: 25px solid $primary;
+  input:focus,
+  select:focus,
+  button:focus,
+  textarea:focus {
+    outline: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: none;
+    outline: none;
+  }
+
+  ul,
+  ol {
+    padding: 0;
+    margin: 0;
+  }
 
   body {
     font-family: "Shojumaru", cursive;
@@ -15,28 +33,24 @@ html {
     margin: 0 auto;
     background-color: $bg-color;
     background-image: url(./assets/images/backg.svg);
-	background-repeat: no-repeat;
-	background-size: 10em;
-	background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 10em;
+    background-position: 10px 10px;
   }
   .img-anime {
     opacity: 0;
     transform: translateX(-200px);
   }
-  section {
-    text-align: center;
-    vertical-align: middle;
-  }
   .midle {
-	background-color: $primary;
-	background-image: url(./assets/images/backg.svg);
-	background-repeat: repeat-x;
-	background-position: bottom;
-	background-size: 4em;
-	padding-bottom: 3em;
+    background-color: $primary;
+    background-image: url(./assets/images/backg.svg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 4em;
+    padding-bottom: 3em;
   }
   .bottom {
-	background-color: $bg-color;
+    background-color: $bg-color;
   }
   .col-sm,
   .col-md-auto,
