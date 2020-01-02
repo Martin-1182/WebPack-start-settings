@@ -26,8 +26,17 @@ module.exports = merge(common, {
         }
       }),
       new HtmlWebpackPlugin({
-        filename: "test/index.html",
+        filename: "about/index.html",
         template: "./src/template1.html",
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true
+        }
+      }),
+      new HtmlWebpackPlugin({
+        filename: "contact/index.html",
+        template: "./src/template2.html",
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
